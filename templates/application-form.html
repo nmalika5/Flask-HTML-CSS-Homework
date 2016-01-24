@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block title %} Job Form {% endblock %}
+
+{% block content %}
+    
+    <h1>Job Application</h1>
+    <p class="double">This is a job application for the software team at the company, called Ubermelon!</p>
+    <br>
+    <form action="/application" method="POST">
+        <label>What's your first name?
+            <input type="text" name="firstname" class="fieldcolor">
+        </label>   
+        <br><br>
+        <label>What's your last name?
+            <input type="text" name="lastname" class="fieldcolor" id="font">
+        </label>
+        <br><br>
+        <label>What are you salary expectations?
+            <input type="number" name="salary" class="fieldcolor">
+        </label>
+        <br><br>
+        Position, you're applying for:
+        <select name="position">
+            <option value="Software Engineer">Software Engineer</option>   
+            <option value="Qa Engineer">QA Engineer</option>
+            <option value="Product Manager">Product Manager</option>
+        </select>
+        <br><br>
+        <input type="submit" value="Submit Application" class="fieldcolor">
+    </form>
+
+{% endblock %}

@@ -1,0 +1,12 @@
+/*Your styles can go here.*/
+.fieldcolor {
+    background-color: yellow;
+}
+
+#font {
+    font-weight: bold;
+}
+
+.double {
+    border-style: double;
+}
